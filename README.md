@@ -2,9 +2,9 @@
 
 ## Project Summary
 
-This project utlizes Scrapy and Selenium with Python to scrape business profiles from the [MPMA Business Directory](https://www.mpmadirectory.org.my/all-members).
+This project utlizes Scrapy and Selenium with Python to scrape business profiles from the [MPMA Industry Directory](https://www.mpmadirectory.org.my/all-members).
 
-First, the scrapy spider ctawls through each page of the website, extracts the each company's profile link, saving it to a *links.txt* file in the *docs* folder, then collects the following information for each company and saves to a *profiles.csv* file:
+First, the scrapy spider crawls through each page of the website, extracts the each company's profile link, saving it to a *links.txt* file in the *docs* folder, then collects the following information for each company and saves to a *profiles.csv* file:
 - Company Name
 - Business Registration Number
 - Year of Incorporation
@@ -29,3 +29,5 @@ The major challenge with this project was extracting the company email since eac
 Thereafter, using pandas in a Jupyter Notebook (**parse.ipynb**), I merged the *profiles.csv* and *email.csv* files to obtain the complete company profile information available on the website.
 
 The *requirements.txt* file contains the list of all Python libraries and dependencies used for this project.
+
+All the relevant web crawling scripts are found in the *mpma_company_profiles* folder/directory.
